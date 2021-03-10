@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum API | SuperCode</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" width="140">
+            </a>
+        </div>
+
+        <div class="container">
+    
+            <div class="d-flex mt-4 justify-content-between">
+    
+                <div class="filters d-flex">
+
+                    <select name="classification" id="classification-filter" class="mr-4 form-control">
+                        <option selected disabled>Classification</option>
+                        <option value="Albums">Albums</option>
+                        <option value="Paintings">Paintings</option>
+                        <option value="Prints">Prints</option>
+                        <option value="Multiples">Multiples</option>
+                        <option value="Audiovisual Works">Audiovisual Works</option>
+                        <option value="Drawings">Drawings</option>
+                      </select>
+        
+                      <select name="medium" id="medium-filter" class="form-control">
+                        <option selected disabled>Medium</option>
+                        <option value="Rattan">Rattan</option>
+                        <option value="Paper">Paper</option>
+                        <option value="Terracotta">Terracotta</option>
+                    </select>
+
+                </div>
+
+                <form id="site-search" class="d-flex" name="search">
+                    <input type="search" id="seachInput" name="q" class="form-control mr-2" placeholder="Search by keyword, title, artist, object number, or gallery number" required>
+                    <button class="btn btn-sm btn-outline-dark">Search</button>
+                </form>
+    
+            </div>
+        
+           </div>
+
+    </header>
+    <main>
+
+    <section id="posts" class="py-5">
+
+        <div class="container">
+
+            <div class="meta d-flex mb-4">
+                <div id="totalResults" class="mr-4">Items: <span class="items"></span></div>
+                <div>Pages: <span id="current-page"></span><span id="item-pages"></span></div>
+            </div>
+
+            <div class="row">
+
+                
+            </div>
+
+            <div class="text-center py-5">
+
+            <hr class="my-5" />
+
+            <button id="loadmore" class="btn btn-dark">load more</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
